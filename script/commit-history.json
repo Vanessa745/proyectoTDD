@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "063e25387d292c0b7c6d75fd107cefbb2821f43f",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-10T18:46:23.000Z",
       "message": "feat: Validar la hora de salida y mostrar mensaje: La hora de salida es válida.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/063e25387d292c0b7c6d75fd107cefbb2821f43f"
     },
     "stats": {
       "total": 27,
@@ -91,6 +91,25 @@
     },
     "coverage": 83.33,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-10T20:02:28.000Z",
+      "message": "feat: Mostrar horas de estadía",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 13,
+      "deletions": 5,
+      "date": "2025-09-10"
+    },
+    "coverage": 85.71,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

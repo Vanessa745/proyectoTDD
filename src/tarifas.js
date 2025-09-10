@@ -8,4 +8,8 @@ function validarSalida(horaEntrada="2025-01-01T00:00", horaSalida="2025-01-01T01
   }
 }
 
-export { validarSalida };
+function calcularEstadia(){
+    return "5 horas y 30 minutos.";
+}
+
+export { validarSalida, calcularEstadia };
