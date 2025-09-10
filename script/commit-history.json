@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "df04171f8db31e0dbbce8f21d5b4260f812f6ab8",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-10T02:42:42.000Z",
       "message": "feat: Ingresar la hora de salida y mostrarla",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/df04171f8db31e0dbbce8f21d5b4260f812f6ab8"
     },
     "stats": {
       "total": 8,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-10T18:13:00.000Z",
+      "message": "feat: Mostrar mensaje: La hora de salida es válida.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
