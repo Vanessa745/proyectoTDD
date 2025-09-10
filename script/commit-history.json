@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-10T01:48:07.000Z",
+      "message": "chore: instalación de dependencias",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 27158,
+      "additions": 4226,
+      "deletions": 22932,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
