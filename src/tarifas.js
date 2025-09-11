@@ -114,4 +114,14 @@ function calcularEstadiaDiurnaYNocturna(horaEntrada="2025-01-01T18:00", horaSali
   return [hdi, mindi, hnoc, minnoc];
 }
 
-export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna };
+function calcularTarifaTotal(horasDia=0, minutosDia=0, horasNoc=0, minutosNoc=0, tarifaHoraDia=10, tarifaMinutoDia=0.17, tarifaHoraNoc=6, tarifaMinutoNoc=0.10) {
+  const totalDia = (horasDia * tarifaHoraDia) + (minutosDia * tarifaMinutoDia);
+  const totalNoc = (horasNoc * tarifaHoraNoc) + (minutosNoc * tarifaMinutoNoc);
+  const total = totalDia + totalNoc;
+  return new Intl.NumberFormat('es-ES', { 
+    minimumFractionDigits: 2, 
+    maximumFractionDigits: 2 
+  }).format(total);
+}
+
+export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal };

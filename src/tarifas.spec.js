@@ -1,4 +1,4 @@
-import { validarSalida, mostrarEstadia, calcularTarifa, verificarEstadiaNocturna, calcularTarifaNocturna } from "./tarifas.js";
+import { validarSalida, mostrarEstadia, calcularTarifa, verificarEstadiaNocturna, calcularTarifaNocturna, calcularTarifaTotal } from "./tarifas.js";
 
 describe("Tarifas", () => {
   it("Deberia mostrar mensaje: La hora de salida es válida.", () => {
@@ -35,5 +35,9 @@ describe("Tarifas", () => {
 
   it("Debería mostrar la tarifa por estadía nocturna.", () => {
     expect(calcularTarifaNocturna(2, 30)).toEqual("15,00");
+  });
+
+  it("Debería mostrar la tarifa por estadía completa (un día).", () => {
+    expect(calcularTarifaTotal(2, 0, 1, 0)).toEqual("26,00");
   });
 });

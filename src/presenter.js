@@ -1,4 +1,4 @@
-import { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna } from "./tarifas.js";
+import { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal } from "./tarifas.js";
 
 const in_ingreso = document.querySelector("#ingreso");
 const in_salida = document.querySelector("#salida");
@@ -11,14 +11,8 @@ form.addEventListener("submit", (event) => {
   const hora_i = in_ingreso.value;
   const hora_s = in_salida.value;
 
-  const resultado = validarSalida(hora_i, hora_s);
-  const estadia = mostrarEstadia(hora_i, hora_s);
-  const [horas, minutos] = calcularEstadia(hora_i, hora_s);
-  const tarifa = calcularTarifa(horas, minutos);
-  const nocturna = verificarEstadiaNocturna(hora_i, hora_s);
-  const [h_noct, m_noct] = calcularEstadiaNocturna(hora_i, hora_s);
-  const tarifa_nocturna = calcularTarifaNocturna(h_noct, m_noct);
   const [horasdia, minutosdia, horasnoct, minutosnoct] = calcularEstadiaDiurnaYNocturna(hora_i, hora_s);
+  const tarifaTotal = calcularTarifaTotal(horasdia, minutosdia, horasnoct, minutosnoct);
 
-  div.innerHTML = "<p>Horas día:" + horasdia + ", minutos día: " + minutosdia + ", horas noche: " + horasnoct + ", minutos noche: " + minutosnoct + "</p>";
+  div.innerHTML = "<p>Horas día:" + horasdia + ", minutos día: " + minutosdia + ", horas noche: " + horasnoct + ", minutos noche: " + minutosnoct + "</p><br><p>Tarifa total: " + tarifaTotal + " Bs.</p>";
 });
