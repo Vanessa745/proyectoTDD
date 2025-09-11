@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "36846bec57a0f94e1f72f38877707c5ecfcbae33",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T11:05:28.000Z",
       "message": "feat: Mostrar tarifa total de un día.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/36846bec57a0f94e1f72f38877707c5ecfcbae33"
     },
     "stats": {
       "total": 30,
@@ -300,6 +300,25 @@
     },
     "coverage": 48.61,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T11:12:10.000Z",
+      "message": "feat: Mostrar tope máximo.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 10,
+      "deletions": 2,
+      "date": "2025-09-11"
+    },
+    "coverage": 49.32,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

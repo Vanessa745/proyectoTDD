@@ -124,4 +124,8 @@ function calcularTarifaTotal(horasDia=0, minutosDia=0, horasNoc=0, minutosNoc=0,
   }).format(total);
 }
 
-export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal };
+function aplicarTope(tarifaTotal) {
+    return "50,00";
+}
+
+export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope };

@@ -1,4 +1,4 @@
-import { validarSalida, mostrarEstadia, calcularTarifa, verificarEstadiaNocturna, calcularTarifaNocturna, calcularTarifaTotal } from "./tarifas.js";
+import { validarSalida, mostrarEstadia, calcularTarifa, verificarEstadiaNocturna, calcularTarifaNocturna, calcularTarifaTotal, aplicarTope } from "./tarifas.js";
 
 describe("Tarifas", () => {
   it("Deberia mostrar mensaje: La hora de salida es válida.", () => {
@@ -39,5 +39,9 @@ describe("Tarifas", () => {
 
   it("Debería mostrar la tarifa por estadía completa (un día).", () => {
     expect(calcularTarifaTotal(2, 0, 1, 0)).toEqual("26,00");
+  });
+
+  it("Debería mostrar 50 Bs. como el tope máximo de cobro.", () => {
+    expect(aplicarTope("60,00")).toEqual("50,00");
   });
 });
