@@ -1,4 +1,4 @@
-import { validarSalida } from "./tarifas.js";
+import { validarSalida, calcularEstadia } from "./tarifas.js";
 
 const ingreso = document.querySelector("#ingreso");
 const salida = document.querySelector("#salida");
@@ -11,7 +11,8 @@ form.addEventListener("submit", (event) => {
   const hora_i = ingreso.value;
   const hora_s = salida.value;
 
-  const resultado = validarSalida(hora_i, hora_s);
+  //const resultado = validarSalida(hora_i, hora_s);
+  const resultado = calcularEstadia(hora_i, hora_s);
 
   div.innerHTML = "<p>Ingreso: " + hora_i + ", Salida: " + hora_s + "</p><br><p> " + resultado + "</p>";
 });

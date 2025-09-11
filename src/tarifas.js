@@ -8,8 +8,14 @@ function validarSalida(horaEntrada="2025-01-01T00:00", horaSalida="2025-01-01T01
   }
 }
 
-function calcularEstadia(){
-    return "5 horas y 30 minutos.";
+function calcularEstadia(horaEntrada="2025-01-01T00:00", horaSalida="2025-01-01T01:00"){
+  const entrada = new Date(horaEntrada);
+  const salida = new Date(horaSalida);
+  const diffMs = salida - entrada;
+  const diffMin = Math.floor(diffMs/60000);
+  const horas = Math.floor(diffMin/60);
+  const minutos = diffMin%60;
+  return `${horas} hora/s y ${minutos} minuto/s.`;
 }
 
 export { validarSalida, calcularEstadia };
