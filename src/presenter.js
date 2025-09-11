@@ -1,18 +1,18 @@
 import { validarSalida, calcularEstadia } from "./tarifas.js";
 
-const ingreso = document.querySelector("#ingreso");
-const salida = document.querySelector("#salida");
+const in_ingreso = document.querySelector("#ingreso");
+const in_salida = document.querySelector("#salida");
 const form = document.querySelector("#calculo-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const hora_i = ingreso.value;
-  const hora_s = salida.value;
+  const hora_i = in_ingreso.value;
+  const hora_s = in_salida.value;
 
-  //const resultado = validarSalida(hora_i, hora_s);
-  const resultado = calcularEstadia(hora_i, hora_s);
+  const resultado = validarSalida(hora_i, hora_s);
+  const estadia = calcularEstadia(hora_i, hora_s);
 
-  div.innerHTML = "<p>Ingreso: " + hora_i + ", Salida: " + hora_s + "</p><br><p> " + resultado + "</p>";
+  div.innerHTML = "<p>Ingreso: " + hora_i + ", Salida: " + hora_s + "</p><br><p>" + resultado + "</p><br><p>Duración de la estadía: " + estadia + "</p>";
 });

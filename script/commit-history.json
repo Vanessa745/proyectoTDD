@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b4374055adaa3f236e61a567b4e084b49f031c52",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T03:28:53.000Z",
       "message": "feat: Mostrar horas de estadía a partir del ingreso y salida.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/b4374055adaa3f236e61a567b4e084b49f031c52"
     },
     "stats": {
       "total": 23,
@@ -129,6 +129,25 @@
     },
     "coverage": 92.31,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T03:54:18.000Z",
+      "message": "feat: Mostrar la tarifa.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 21,
+      "deletions": 13,
+      "date": "2025-09-11"
+    },
+    "coverage": 92.86,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
