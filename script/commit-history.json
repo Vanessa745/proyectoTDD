@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "59f67a4ecd2f43279c21028a10517954cbd86196",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T10:09:29.000Z",
       "message": "refactor: Mostrar y devolver estadía nocturna.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/59f67a4ecd2f43279c21028a10517954cbd86196"
     },
     "stats": {
       "total": 18,
@@ -224,6 +224,25 @@
     },
     "coverage": 59.18,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T10:15:15.000Z",
+      "message": "feat: Mostrar tarifa nocturna.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 10,
+      "deletions": 2,
+      "date": "2025-09-11"
+    },
+    "coverage": 60,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
