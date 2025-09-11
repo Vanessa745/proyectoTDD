@@ -29,7 +29,11 @@ describe("Tarifas", () => {
     expect(verificarEstadiaNocturna("2025-09-08T22:30", "2025-09-08T23:30")).toEqual("1 hora/s y 0 minuto/s.");
   });
 
-  it("Debería mostrar la tarifa por estadía nocturna.", () => {
+  it("Debería mostrar la tarifa nocturna.", () => {
     expect(calcularTarifaNocturna()).toEqual("6,00");
+  });
+
+  it("Debería mostrar la tarifa por estadía nocturna.", () => {
+    expect(calcularTarifaNocturna(2, 30)).toEqual("15,00");
   });
 });

@@ -78,8 +78,12 @@ function calcularEstadiaNocturna(horaEntrada="2025-01-01T22:00", horaSalida="202
   return [horas, minutos];
 }
 
-function calcularTarifaNocturna() {
-    return "6,00"
+function calcularTarifaNocturna(horas=1, minutos=0, tarifaHora=6, tarifaMinuto=0.10) {
+  const total = (horas * tarifaHora) + (minutos * tarifaMinuto);
+  return new Intl.NumberFormat('es-ES', { 
+    minimumFractionDigits: 2, 
+    maximumFractionDigits: 2 
+  }).format(total);
 }
 
-export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularTarifaNocturna };
+export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna };
