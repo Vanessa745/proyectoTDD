@@ -86,4 +86,32 @@ function calcularTarifaNocturna(horas=1, minutos=0, tarifaHora=6, tarifaMinuto=0
   }).format(total);
 }
 
-export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna };
+function calcularEstadiaDiurnaYNocturna(horaEntrada="2025-01-01T18:00", horaSalida="2025-01-01T23:00", opts = {}) {
+  const { startHour = 22, endHour = 6 } = opts;
+
+  const entrada = new Date(horaEntrada);
+  const salida = new Date(horaSalida);;
+
+  // Sumar minutos nocturnos recorriendo ventanas 22:00–06:00 por cada día
+  let noctMin = 0;
+  const diaInicio = new Date(entrada.getFullYear(), entrada.getMonth(), entrada.getDate() - 1);
+  for (let d = new Date(diaInicio); d <= salida; d.setDate(d.getDate() + 1)) {
+    const inicioRangoNoct = new Date(d.getFullYear(), d.getMonth(), d.getDate(), startHour, 0, 0);
+    const finRangoNoct = endHour > startHour
+      ? new Date(d.getFullYear(), d.getMonth(), d.getDate(), endHour, 0, 0)
+      : new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1, endHour, 0, 0);
+    noctMin += minutosSolapados(entrada, salida, inicioRangoNoct, finRangoNoct);
+  }
+
+  const totalMin = Math.floor((salida - entrada) / 60000);
+  const diurMin = Math.max(0, totalMin - noctMin);
+
+  const hdi  = Math.floor(diurMin / 60);
+  const mindi = diurMin % 60;
+  const hnoc = Math.floor(noctMin / 60);
+  const minnoc = noctMin % 60;
+
+  return [hdi, mindi, hnoc, minnoc];
+}
+
+export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna };

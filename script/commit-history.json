@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f32538a701cb20b96b70c44d22a942b55b1c4d52",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T10:23:27.000Z",
       "message": "feat: Mostrar tarifa nocturna por estadía nocturna.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/f32538a701cb20b96b70c44d22a942b55b1c4d52"
     },
     "stats": {
       "total": 22,
@@ -261,6 +261,25 @@
       "date": "2025-09-11"
     },
     "coverage": 60.78,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T10:55:02.000Z",
+      "message": "feat: Mostrar estadía total.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 32,
+      "deletions": 3,
+      "date": "2025-09-11"
+    },
+    "coverage": 45.59,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
