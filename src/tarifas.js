@@ -124,8 +124,17 @@ function calcularTarifaTotal(horasDia=0, minutosDia=0, horasNoc=0, minutosNoc=0,
   }).format(total);
 }
 
-function aplicarTope(tarifaTotal) {
-    return "50,00";
+function aplicarTope(tarifaCobrada) {
+  const tar = parseFloat(tarifaCobrada.replace(",", "."));
+
+  const tope = 50.0;
+  const resultado = tar >= tope ? tope : tar;
+
+  // volver a string con coma y 2 decimales
+  return new Intl.NumberFormat('es-ES', { 
+    minimumFractionDigits: 2, 
+    maximumFractionDigits: 2 
+  }).format(resultado);
 }
 
 export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope };

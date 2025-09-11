@@ -44,4 +44,8 @@ describe("Tarifas", () => {
   it("Debería mostrar 50 Bs. como el tope máximo de cobro.", () => {
     expect(aplicarTope("60,00")).toEqual("50,00");
   });
+
+  it("Debería aplicar 50 Bs. como el tope máximo de cobro.", () => {
+    expect(aplicarTope("100,00")).toEqual("50,00");
+  });
 });
