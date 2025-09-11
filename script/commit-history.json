@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "205869460a0699403ca563abba0a1b68846ed156",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T04:12:30.000Z",
       "message": "feat: Mostrar la tarifa por estadía.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/205869460a0699403ca563abba0a1b68846ed156"
     },
     "stats": {
       "total": 24,
       "additions": 19,
       "deletions": 5,
+      "date": "2025-09-11"
+    },
+    "coverage": 95.24,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T04:16:49.000Z",
+      "message": "fix: Mostrar en pnatalla la tarifa por estadía.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
       "date": "2025-09-11"
     },
     "coverage": 95.24,
