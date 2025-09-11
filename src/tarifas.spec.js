@@ -18,6 +18,10 @@ describe("Tarifas", () => {
   });
 
   it("Debería mostrar la tarifa.", () => {
-    expect(calcularTarifa()).toEqual("40 Bs.");
+    expect(calcularTarifa()).toEqual("10,00");
+  });
+
+  it("Debería mostrar la tarifa por estadía.", () => {
+    expect(calcularTarifa("2025-09-08T08:30", "2025-09-08T12:00")).toEqual("35,10");
   });
 });

@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c8bec2174d09670f635c445259675abc1e2e646e",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T03:54:18.000Z",
       "message": "feat: Mostrar la tarifa.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/c8bec2174d09670f635c445259675abc1e2e646e"
     },
     "stats": {
       "total": 34,
@@ -148,6 +148,25 @@
     },
     "coverage": 92.86,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T04:12:30.000Z",
+      "message": "feat: Mostrar la tarifa por estadía.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 19,
+      "deletions": 5,
+      "date": "2025-09-11"
+    },
+    "coverage": 95.24,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
