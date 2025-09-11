@@ -60,4 +60,22 @@ function verificarEstadiaNocturna(horaEntrada="2025-01-01T00:00", horaSalida="20
   return `${horas} hora/s y ${minutos} minuto/s.`;
 }
 
+function calcularEstadiaNocturna(horaEntrada="2025-01-01T22:00", horaSalida="2025-01-01T23:00") {
+  const entrada = new Date(horaEntrada);
+  const salida = new Date(horaSalida);
+  
+  let noctMin = 0;
+  const diaInicio = new Date(entrada.getFullYear(), entrada.getMonth(), entrada.getDate() - 1);
+
+  for (let d = new Date(diaInicio); d <= salida; d.setDate(d.getDate() + 1)) {
+    const inicioRangoNoct = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 22, 0, 0);
+    const finRangoNoct   = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1, 6, 0, 0); 
+    noctMin += minutosSolapados(entrada, salida, inicioRangoNoct, finRangoNoct);
+  }
+
+  const horas = Math.floor(noctMin / 60);
+  const minutos = noctMin % 60;
+  return [horas, minutos];
+}
+
 export { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna };

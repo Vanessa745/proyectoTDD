@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1bbbf3f9ee7f234016d03c8d7e10447fa611b618",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T10:04:23.000Z",
       "message": "feat: mostrar horas de estadía nocturna.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/1bbbf3f9ee7f234016d03c8d7e10447fa611b618"
     },
     "stats": {
       "total": 37,
@@ -204,6 +204,25 @@
       "date": "2025-09-11"
     },
     "coverage": 78.38,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-11T10:09:29.000Z",
+      "message": "refactor: Mostrar y devolver estadía nocturna.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-09-11"
+    },
+    "coverage": 59.18,
     "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
