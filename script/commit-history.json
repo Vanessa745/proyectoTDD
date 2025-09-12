@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "24ddbc944f6808a133e1aae9d4c90cac71c2f1d7",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-12T02:12:35.000Z",
       "message": "feat: Mostrar la penalidad por ticket perdido.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/24ddbc944f6808a133e1aae9d4c90cac71c2f1d7"
     },
     "stats": {
       "total": 14,
@@ -413,6 +413,25 @@
       "date": "2025-09-12"
     },
     "coverage": 68.33,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-12T02:21:28.000Z",
+      "message": "test y refactor: Adecuación de los tests y reducción de funciones.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 7,
+      "deletions": 36,
+      "date": "2025-09-12"
+    },
+    "coverage": 95.12,
     "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"

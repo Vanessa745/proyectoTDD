@@ -1,4 +1,4 @@
-import { validarSalida, mostrarEstadia, calcularEstadia, calcularTarifa, verificarEstadiaNocturna, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope } from "./tarifas.js";
+import { calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope } from "./tarifas.js";
 
 const in_ingreso = document.querySelector("#ingreso");
 const in_salida = document.querySelector("#salida");

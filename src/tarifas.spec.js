@@ -1,4 +1,4 @@
-import { validarSalida, calcularTarifa, calcularTarifaNocturna, calcularTarifaTotal, aplicarTope, calcularEstadia, calcularEstadiaNocturna, verificarEstadoTicket } from "./tarifas.js";
+import { validarSalida, calcularTarifa, calcularTarifaNocturna, calcularTarifaTotal, aplicarTope, verificarEstadoTicket, calcularEstadiaDiurnaYNocturna } from "./tarifas.js";
 
 describe("Tarifas", () => {
   it("Deberia mostrar mensaje: La hora de salida es válida.", () => {
@@ -10,11 +10,11 @@ describe("Tarifas", () => {
   });
 
   it("Debería mostrar las horas de estadia.", () => {
-    expect(calcularEstadia()).toEqual([1, 0]);
+    expect(calcularEstadiaDiurnaYNocturna()).toEqual([1, 0, 0, 0]);
   });
 
   it("Debería mostrar las horas de estadia a partir del ingreso y salida.", () => {
-    expect(calcularEstadia("2025-09-08T08:30", "2025-09-08T12:00")).toEqual([3, 30]);
+    expect(calcularEstadiaDiurnaYNocturna("2025-09-08T08:30", "2025-09-08T12:00")).toEqual([3, 30, 0, 0]);
   });
 
   it("Debería mostrar la tarifa.", () => {
@@ -26,7 +26,7 @@ describe("Tarifas", () => {
   });
 
   it("Debería mostrar las horas de estadía nocturna.", () => {
-    expect(calcularEstadiaNocturna("2025-09-08T22:30", "2025-09-08T23:30")).toEqual([1, 0]);
+    expect(calcularEstadiaDiurnaYNocturna("2025-09-08T22:30", "2025-09-08T23:30")).toEqual([0, 0, 1, 0]);
   });
 
   it("Debería mostrar la tarifa nocturna.", () => {
