@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f40c6f7b9e0ce5d97bda002ae8eec4eec4e87bc7",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-12T00:06:56.000Z",
       "message": "feat: Seleccionar y mostrar si el ticket fue perdido o no.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/f40c6f7b9e0ce5d97bda002ae8eec4eec4e87bc7"
     },
     "stats": {
       "total": 20,
@@ -356,6 +356,25 @@
       "date": "2025-09-12"
     },
     "coverage": 51.32,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-12T01:51:56.000Z",
+      "message": "test: Modificación de pruebas y funciones.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 5,
+      "deletions": 33,
+      "date": "2025-09-12"
+    },
+    "coverage": 68.42,
     "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
