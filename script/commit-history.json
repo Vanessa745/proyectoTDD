@@ -323,18 +323,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4849790a28e83d5dfde25c899fac4e9c68b2a53b",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-11T11:52:46.000Z",
       "message": "feat: Aplicar tope máximo y mostrar tarifa.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/4849790a28e83d5dfde25c899fac4e9c68b2a53b"
     },
     "stats": {
       "total": 22,
       "additions": 18,
       "deletions": 4,
       "date": "2025-09-11"
+    },
+    "coverage": 51.32,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-12T00:06:56.000Z",
+      "message": "feat: Seleccionar y mostrar si el ticket fue perdido o no.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 19,
+      "deletions": 1,
+      "date": "2025-09-12"
     },
     "coverage": 51.32,
     "test_count": 13,

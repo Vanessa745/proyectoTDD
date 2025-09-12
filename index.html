@@ -6,6 +6,15 @@
   <body>
     <h1>Cálculo de Tarifas de Estacionamiento</h1>
     <form id="calculo-form">
+      <label>Estado del ticket:</label><br>
+      <label>
+        <input type="radio" name="estadoTicket" value="perdido">
+        Perdido
+      </label><br>
+      <label>
+        <input type="radio" name="estadoTicket" value="no_perdido">
+        No perdido
+      </label><br>
       <label for="ingreso">Fecha y hora de ingreso:</label>
       <input type="datetime-local" id="ingreso" />
       <label for="salida">Fecha y hora de salida:</label>
