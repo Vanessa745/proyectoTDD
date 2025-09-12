@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c7baa38d9a63ad6102789a6e39d5d1488dd0a194",
     "author": "Vanessa745",
     "commit": {
       "date": "2025-09-12T02:08:59.000Z",
       "message": "test: Mostrar la penalidad por ticket perdido.",
-      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/c7baa38d9a63ad6102789a6e39d5d1488dd0a194"
     },
     "stats": {
       "total": 12,
@@ -395,6 +395,25 @@
     },
     "coverage": 68.97,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Vanessa745",
+    "commit": {
+      "date": "2025-09-12T02:12:35.000Z",
+      "message": "feat: Mostrar la penalidad por ticket perdido.",
+      "url": "https://github.com/Vanessa745/proyectoTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 11,
+      "deletions": 3,
+      "date": "2025-09-12"
+    },
+    "coverage": 68.33,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }

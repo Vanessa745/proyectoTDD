@@ -109,8 +109,12 @@ function aplicarTope(tarifaCobrada) {
   }).format(resultado);
 }
 
-function verificarEstadoTicket() {
-    return"80,00";
+function verificarEstadoTicket(estado="perdido") {
+    if (estado === "perdido") {
+        return "80,00";
+    } else {
+        return 0;
+    }
 }
 
 export { validarSalida, calcularEstadia, calcularTarifa, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope, verificarEstadoTicket };

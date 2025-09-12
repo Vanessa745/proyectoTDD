@@ -49,7 +49,11 @@ describe("Tarifas", () => {
     expect(aplicarTope("100,00")).toEqual("50,00");
   });
 
-  it("Debería mostrar la penalidad si el ticket fue perdido", () => {
+  it("Debería mostrar la penalidad.", () => {
     expect(verificarEstadoTicket()).toEqual("80,00");
+  });
+
+  it("Debería mostrar la penalidad si el ticket fue perdido", () => {
+    expect(verificarEstadoTicket("perdido")).toEqual("80,00");
   });
 });
