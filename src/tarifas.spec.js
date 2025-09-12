@@ -1,4 +1,4 @@
-import { validarSalida, calcularTarifa, calcularTarifaNocturna, calcularTarifaTotal, aplicarTope, calcularEstadia, calcularEstadiaNocturna } from "./tarifas.js";
+import { validarSalida, calcularTarifa, calcularTarifaNocturna, calcularTarifaTotal, aplicarTope, calcularEstadia, calcularEstadiaNocturna, verificarEstadoTicket } from "./tarifas.js";
 
 describe("Tarifas", () => {
   it("Deberia mostrar mensaje: La hora de salida es válida.", () => {
@@ -47,5 +47,9 @@ describe("Tarifas", () => {
 
   it("Debería aplicar 50 Bs. como el tope máximo de cobro.", () => {
     expect(aplicarTope("100,00")).toEqual("50,00");
+  });
+
+  it("Debería mostrar la penalidad si el ticket fue perdido", () => {
+    expect(verificarEstadoTicket()).toEqual("80,00");
   });
 });

@@ -109,4 +109,8 @@ function aplicarTope(tarifaCobrada) {
   }).format(resultado);
 }
 
-export { validarSalida, calcularEstadia, calcularTarifa, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope };
+function verificarEstadoTicket() {
+    return"80,00";
+}
+
+export { validarSalida, calcularEstadia, calcularTarifa, calcularEstadiaNocturna, calcularTarifaNocturna, calcularEstadiaDiurnaYNocturna, calcularTarifaTotal, aplicarTope, verificarEstadoTicket };
